@@ -53,6 +53,9 @@ var (
 
 func TestAddTwoNumbers(t *testing.T) {
 	for _, qa := range qas {
-		assert.Equal(t, qa.a.result, AddTwoNumbers(qa.q.l1, qa.q.l2), "input question: %v", qa.q)
+		assert.Equal(t,
+			qa.a.result,
+			AddTwoNumbers(qa.q.l1, qa.q.l2),
+			"input question: l1: %v, l2: %v", qa.q.l1, qa.q.l2)
 	}
 }

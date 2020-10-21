@@ -31,12 +31,18 @@ var (
 
 func TestLengthOfLongestSubstringWithExhaustive(t *testing.T) {
 	for _, qa := range qas {
-		assert.Equal(t, qa.a.result, LengthOfLongestSubstringWithExhaustive(qa.q.s), "input question: %v", qa.q)
+		assert.Equal(t,
+			qa.a.result,
+			LengthOfLongestSubstringWithExhaustive(qa.q.s),
+			"input question: s: %v", qa.q.s)
 	}
 }
 
 func TestLengthOfLongestSubstringWithSlidingWindow(t *testing.T) {
 	for _, qa := range qas {
-		assert.Equal(t, qa.a.result, LengthOfLongestSubstringWithSlidingWindow(qa.q.s), "input question: %v", qa.q)
+		assert.Equal(t,
+			qa.a.result,
+			LengthOfLongestSubstringWithSlidingWindow(qa.q.s),
+			"input question: s: %v", qa.q.s)
 	}
 }
