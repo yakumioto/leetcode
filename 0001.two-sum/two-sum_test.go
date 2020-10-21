@@ -22,7 +22,7 @@ type qa struct {
 
 var (
 	qas = []qa{
-		{q{nums: []int{2, 7, 11, 15}, target: 9}, a{result: []int{1, 1}}},
+		{q{nums: []int{2, 7, 11, 15}, target: 9}, a{result: []int{1, 0}}},
 		{q{nums: []int{2, 7, 11, 15}, target: 0}, a{result: nil}},
 	}
 )
